@@ -16,5 +16,24 @@ void Metod1(string [] StringArray)
     }
 }
 
-string[] AR = {"Маi","Даша","М","Дарья","hre","00","qwert","qwe"};
-Metod1(AR);
+// string[] AR = {"Маi","Даша","М","Дарья","hre","00","qwert","qwe"};
+// Metod1(AR);
+
+string a;
+var UserArray = new List<string>();
+Console.WriteLine("Для окончания ввода жмакайте Enter");
+Console.WriteLine("Введите элементы массива");
+//Получаем строку и проверяем ее содержание
+while (!string.IsNullOrEmpty((a = Console.ReadLine()))) //..((a = Console.ReadLine()) != "Q")
+{
+    UserArray.Add(a);
+}
+Console.Write("Введенный массив: ");
+Console.WriteLine(string.Join(" ", UserArray));
+string[] UserMassiv = UserArray.ToArray();
+Console.WriteLine("Для продолжения нажмите Enter");
+Console.ReadKey();
+
+//string[] AR = {"Маi","Даша","М","Дарья","hre","00","qwert","qwe"};
+Console.WriteLine($"elemets.length <=3:\t");
+Metod1(UserMassiv);
