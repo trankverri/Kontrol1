@@ -37,3 +37,5 @@ Console.ReadKey();
 //string[] AR = {"Маi","Даша","М","Дарья","hre","00","qwert","qwe"};
 Console.WriteLine($"elemets.length <=3:\t");
 Metod1(UserMassiv);
+
+// pxtv cnjkmrj dbpyb bp-pf jlyjuj vtnjlf
